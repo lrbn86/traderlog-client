@@ -1,5 +1,4 @@
-<div class="container-bg">
-  <button>Add trade</button>
+<div>
   <div>
     <table>
       <tr>
@@ -13,139 +12,19 @@
         <th>Return $ &#11032;</th>
         <th>Return % &#11032;</th>
       </tr>
-      <tr>
-        <td>WIN</td>
-        <td>06/14/2022</td>
-        <td>AMZN</td>
-        <td>104.02</td>
-        <td>126.03</td>
-        <td>100</td>
-        <td>LONG</td>
-        <td>$200</td>
-        <td>5%</td>
+      <tr *ngFor="let stock of stocks">
+        <td>{{ stock.status }}</td>
+        <td>{{ stock.date }}</td>
+        <td>{{ stock.symbol }}</td>
+        <td>{{ stock.entry }}</td>
+        <td>{{ stock.exit }}</td>
+        <td>{{ stock.size }}</td>
+        <td>{{ stock.side }}</td>
+        <td>{{ stock.returnDollars }}</td>
+        <td>{{ stock.returnPercent }}</td>
         <td>
           <button>Edit</button>
-          <button class="delete-btn">X</button>
-        </td>
-      </tr>
-      <tr>
-        <td>WIN</td>
-        <td>06/14/2022</td>
-        <td>AMZN</td>
-        <td>104.02</td>
-        <td>126.03</td>
-        <td>100</td>
-        <td>LONG</td>
-        <td>$200</td>
-        <td>5%</td>
-        <td>
-          <button>Edit</button>
-          <button class="delete-btn">X</button>
-        </td>
-      </tr>
-      <tr>
-        <td>WIN</td>
-        <td>06/14/2022</td>
-        <td>AMZN</td>
-        <td>104.02</td>
-        <td>126.03</td>
-        <td>100</td>
-        <td>LONG</td>
-        <td>$200</td>
-        <td>5%</td>
-        <td>
-          <button>Edit</button>
-          <button class="delete-btn">X</button>
-        </td>
-      </tr>
-      <tr>
-        <td>WIN</td>
-        <td>06/14/2022</td>
-        <td>AMZN</td>
-        <td>104.02</td>
-        <td>126.03</td>
-        <td>100</td>
-        <td>LONG</td>
-        <td>$200</td>
-        <td>5%</td>
-        <td>
-          <button>Edit</button>
-          <button class="delete-btn">X</button>
-        </td>
-      </tr>
-      <tr>
-        <td>WIN</td>
-        <td>06/14/2022</td>
-        <td>AMZN</td>
-        <td>104.02</td>
-        <td>126.03</td>
-        <td>100</td>
-        <td>LONG</td>
-        <td>$200</td>
-        <td>5%</td>
-        <td>
-          <button>Edit</button>
-          <button class="delete-btn">X</button>
-        </td>
-      </tr>
-      <tr>
-        <td>WIN</td>
-        <td>06/14/2022</td>
-        <td>AMZN</td>
-        <td>104.02</td>
-        <td>126.03</td>
-        <td>100</td>
-        <td>LONG</td>
-        <td>$200</td>
-        <td>5%</td>
-        <td>
-          <button>Edit</button>
-          <button class="delete-btn">X</button>
-        </td>
-      </tr>
-      <tr>
-        <td>WIN</td>
-        <td>06/14/2022</td>
-        <td>AMZN</td>
-        <td>104.02</td>
-        <td>126.03</td>
-        <td>100</td>
-        <td>LONG</td>
-        <td>$200</td>
-        <td>5%</td>
-        <td>
-          <button>Edit</button>
-          <button class="delete-btn">X</button>
-        </td>
-      </tr>
-      <tr>
-        <td>WIN</td>
-        <td>06/14/2022</td>
-        <td>AMZN</td>
-        <td>104.02</td>
-        <td>126.03</td>
-        <td>100</td>
-        <td>LONG</td>
-        <td>$200</td>
-        <td>5%</td>
-        <td>
-          <button>Edit</button>
-          <button class="delete-btn">X</button>
-        </td>
-      </tr>
-      <tr>
-        <td>WIN</td>
-        <td>06/14/2022</td>
-        <td>AMZN</td>
-        <td>104.02</td>
-        <td>126.03</td>
-        <td>100</td>
-        <td>LONG</td>
-        <td>$200</td>
-        <td>5%</td>
-        <td>
-          <button>Edit</button>
-          <button class="delete-btn">X</button>
+          <button class="delete-btn" (click)="deleteTrade(stock)">X</button>
         </td>
       </tr>
     </table>
