@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Stock, stocks } from '../mock-trades';
+import { Stock, stocks } from '../../mock-trades';
 
 @Component({
   selector: 'app-trades-list',
