@@ -19,4 +19,9 @@ export class TradesListComponent implements OnInit {
 
   getTrades() {}
 
+  onDelete(trade: Trade) {
+    const isDelete = confirm("Are you sure?");
+    if (isDelete) this.tradeService.deleteTrade(trade).subscribe(() => this.trades = this.trades.filter((t) => t.id !== trade.id));
+  }
+
 }

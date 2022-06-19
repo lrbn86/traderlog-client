@@ -15,4 +15,9 @@ export class TradeService {
   getTrades(): Observable<Trade[]> {
     return this.http.get<Trade[]>(this.API_URL);
   }
+
+  deleteTrade(trade: Trade): Observable<Trade[]> {
+    const url = `${this.API_URL}/${trade.id}`;
+    return this.http.delete<Trade[]>(url);
+  }
 }
