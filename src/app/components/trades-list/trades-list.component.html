@@ -1,0 +1,32 @@
+<div>
+  <div>
+    <table>
+      <tr>
+        <th>Status &#11032;</th>
+        <th>Date &#11032;</th>
+        <th>Symbol &#11032;</th>
+        <th>Entry &#11032;</th>
+        <th>Exit &#11032;</th>
+        <th>Size &#11032;</th>
+        <th>Side &#11032;</th>
+        <th>Return $ &#11032;</th>
+        <th>Return % &#11032;</th>
+      </tr>
+      <tr *ngFor="let trade of trades">
+        <td>{{ trade.status }}</td>
+        <td>{{ trade.date }}</td>
+        <td>{{ trade.symbol }}</td>
+        <td>{{ trade.entry }}</td>
+        <td>{{ trade.exit }}</td>
+        <td>{{ trade.size }}</td>
+        <td>{{ trade.side }}</td>
+        <td>{{ trade.returnDollar }}</td>
+        <td>{{ trade.returnPercent }}</td>
+        <td>
+          <button>Edit</button>
+          <button class="delete-btn" (click)="onDelete(trade)">X</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
