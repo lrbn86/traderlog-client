@@ -3,74 +3,22 @@
     {
       "id": 1,
       "status": "WIN",
-      "date": "06/14/2022",
-      "symbol": "AMZN",
-      "entry": 104.02,
-      "exit": 126.03,
-      "size": 100,
-      "side": "LONG",
-      "returnDollar": 200,
-      "returnPercent": 5
-    },
-    {
-      "id": 2,
-      "status": "WIN",
-      "date": "06/14/2022",
-      "symbol": "AMZN",
-      "entry": 104.02,
-      "exit": 126.03,
-      "size": 100,
-      "side": "LONG",
-      "returnDollar": 200,
-      "returnPercent": 5
+      "symbol": "AMZN"
     },
     {
       "id": 3,
       "status": "WIN",
-      "date": "06/14/2022",
-      "symbol": "AMZN",
-      "entry": 104.02,
-      "exit": 126.03,
-      "size": 100,
-      "side": "LONG",
-      "returnDollar": 200,
-      "returnPercent": 5
+      "symbol": "MSFT"
     },
     {
       "id": 4,
       "status": "WIN",
-      "date": "06/14/2022",
-      "symbol": "AMZN",
-      "entry": 104.02,
-      "exit": 126.03,
-      "size": 100,
-      "side": "LONG",
-      "returnDollar": 200,
-      "returnPercent": 5
+      "symbol": "COIN"
     },
     {
       "id": 5,
       "status": "WIN",
-      "date": "06/14/2022",
-      "symbol": "AMZN",
-      "entry": 104.02,
-      "exit": 126.03,
-      "size": 100,
-      "side": "LONG",
-      "returnDollar": 200,
-      "returnPercent": 5
-    },
-    {
-      "id": 6,
-      "status": "WIN",
-      "date": "06/14/2022",
-      "symbol": "AMZN",
-      "entry": 104.02,
-      "exit": 126.03,
-      "size": 100,
-      "side": "LONG",
-      "returnDollar": 200,
-      "returnPercent": 5
+      "symbol": "NVDA"
     }
   ]
 }
