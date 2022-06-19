@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Stock, stocks } from '../../mock-trades';
+import { TradeService } from 'src/app/services/trade.service';
+import { Trade } from 'src/app/Trade';
 
 @Component({
   selector: 'app-trades-list',
@@ -8,16 +9,14 @@ import { Stock, stocks } from '../../mock-trades';
 })
 export class TradesListComponent implements OnInit {
 
-  stocks: Stock[] = stocks;
+  trades: Trade[] = [];
 
-  constructor() { }
+  constructor(private tradeService: TradeService) { }
 
   ngOnInit(): void {
+    this.tradeService.getTrades().subscribe((trades) => this.trades = trades);
   }
 
-  addTrade(stock: Stock): void {}
   getTrades() {}
-  updateTrade(stock: Stock): void {}
-  deleteTrade(stock: Stock): void {}
 
 }

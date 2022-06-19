@@ -12,19 +12,19 @@
         <th>Return $ &#11032;</th>
         <th>Return % &#11032;</th>
       </tr>
-      <tr *ngFor="let stock of stocks">
-        <td>{{ stock.status }}</td>
-        <td>{{ stock.date }}</td>
-        <td>{{ stock.symbol }}</td>
-        <td>{{ stock.entry }}</td>
-        <td>{{ stock.exit }}</td>
-        <td>{{ stock.size }}</td>
-        <td>{{ stock.side }}</td>
-        <td>{{ stock.returnDollars }}</td>
-        <td>{{ stock.returnPercent }}</td>
+      <tr *ngFor="let trade of trades">
+        <td>{{ trade.status }}</td>
+        <td>{{ trade.date }}</td>
+        <td>{{ trade.symbol }}</td>
+        <td>{{ trade.entry }}</td>
+        <td>{{ trade.exit }}</td>
+        <td>{{ trade.size }}</td>
+        <td>{{ trade.side }}</td>
+        <td>{{ trade.returnDollar }}</td>
+        <td>{{ trade.returnPercent }}</td>
         <td>
           <button>Edit</button>
-          <button class="delete-btn" (click)="deleteTrade(stock)">X</button>
+          <button class="delete-btn">X</button>
         </td>
       </tr>
     </table>
