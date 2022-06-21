@@ -1,1 +1,35 @@
-<h1>Add trade</h1>
+<h1>Add Trade</h1>
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" ngNativeValidate>
+
+  <label for="status">Status:</label>
+  <select id="status" [(ngModel)]="status" name="status" required>
+    <option selected disabled>-</option>
+    <option value="win">WIN</option>
+    <option value="lose">LOSE</option>
+  </select>
+
+  <label for="date">Date:</label>
+  <input id="date" type="date" [(ngModel)]="date" name="date" required>
+
+  <label for="symbol">Symbol:</label>
+  <input id="symbol" type="text" [(ngModel)]="symbol" name="symbol" required>
+
+  <label for="entry">Entry:</label>
+  <input id="entry" type="number" [(ngModel)]="entry" name="entry" required>
+
+  <label for="exit">Exit:</label>
+  <input id="exit" type="number" [(ngModel)]="exit" name="exit" required>
+
+  <label for="size">Size:</label>
+  <input id="size" type="number" [(ngModel)]="size" name="size" required>
+
+  <label for="side">Side:</label>
+  <select id="side" [(ngModel)]="side" name="side" required>
+    <option selected disabled>-</option>
+    <option value="long">LONG</option>
+    <option value="short">SHORT</option>
+  </select>
+
+  <button type="submit">Add</button>
+
+</form>

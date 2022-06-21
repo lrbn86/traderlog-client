@@ -24,4 +24,8 @@ export class TradesListComponent implements OnInit {
     if (isDelete) this.tradeService.deleteTrade(trade).subscribe(() => this.trades = this.trades.filter((t) => t.id !== trade.id));
   }
 
+  onAdd(trade: Trade) {
+    this.tradeService.addTrade(trade).subscribe((trade) => this.trades.push(trade));
+  }
+
 }
