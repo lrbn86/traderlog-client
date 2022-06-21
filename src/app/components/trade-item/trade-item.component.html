@@ -1,0 +1,27 @@
+<li>
+  <span [ngClass]="tradeItem.status === 'WIN' ? 'green' : 'red'">
+    {{ tradeItem.status }}
+  </span>
+  <span>
+    {{ tradeItem.date }}
+  </span>
+  <span>
+    {{ tradeItem.symbol }}
+  </span>
+  <span>
+    {{ tradeItem.entry }}
+  </span>
+  <span>
+    {{ tradeItem.exit }}
+  </span>
+  <span>
+    {{ tradeItem.size }}
+  </span>
+  <span [ngClass]="tradeItem.side === 'LONG' ? 'green' : 'red'">
+    {{ tradeItem.side }}
+  </span>
+  <span>
+    <button>Edit</button>
+    <button class="delete-btn" (click)="deleteTradeItem(tradeItem)">X</button>
+  </span>
+</li>

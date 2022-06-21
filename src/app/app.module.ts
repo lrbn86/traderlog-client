@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { PerformanceStatsComponent } from './components/performance-stats/performance-stats.component';
 import { TradesListComponent } from './components/trades-list/trades-list.component';
 import { AddTradeComponent } from './components/add-trade/add-trade.component';
+import { TradeItemComponent } from './components/trade-item/trade-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PerformanceStatsComponent,
     TradesListComponent,
-    AddTradeComponent
+    AddTradeComponent,
+    TradeItemComponent
   ],
   imports: [
     BrowserModule,

@@ -1,19 +1,10 @@
 table {
   border-collapse: collapse;
-  /* border: 1px solid #fff; */
-  margin: 50px 0;
   width: 100%;
 }
 
-td {
-  /* border: 1px solid #fff; */
-  padding: 1.5rem;
+th, td {
+  border: 1px solid #fff;
   text-align: center;
-  border-bottom: 1px solid #fff;
-}
-
-th {
-  padding: 1.5rem;
-  cursor: pointer;
-  user-select: none;
+  padding: 1rem;
 }
