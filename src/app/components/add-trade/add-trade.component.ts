@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { TradeService } from 'src/app/services/trade.service';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-add-trade',
@@ -16,13 +18,15 @@ export class AddTradeComponent implements OnInit {
   size!: number;
   side!: string;
 
-  constructor() { }
+  constructor(private tradeService: TradeService, private location: Location) { }
 
   ngOnInit(): void {
   }
 
   onSubmit(f: NgForm): void {
     const newTradeItem = f.value;
+    this.tradeService.addTrade(newTradeItem).subscribe();
+    this.location.back();
   }
 
 }

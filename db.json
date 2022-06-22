@@ -99,6 +99,56 @@
       "exit": "90",
       "size": "100",
       "side": "LONG"
+    },
+    {
+      "status": "WIN",
+      "date": "2022-06-06",
+      "symbol": "AMZN",
+      "entry": 103,
+      "exit": 110,
+      "size": 200,
+      "side": "LONG",
+      "id": 11
+    },
+    {
+      "status": "WIN",
+      "date": "2022-06-22",
+      "symbol": "AMZN",
+      "entry": 104,
+      "exit": 110,
+      "size": 200,
+      "side": "LONG",
+      "id": 12
+    },
+    {
+      "status": "WIN",
+      "date": "2022-06-28",
+      "symbol": "MSFT",
+      "entry": 110,
+      "exit": 120,
+      "size": 100,
+      "side": "LONG",
+      "id": 13
+    },
+    {
+      "status": "WIN",
+      "date": "2022-06-25",
+      "symbol": "GOOG",
+      "entry": 110,
+      "exit": 200,
+      "size": 1100,
+      "side": "LONG",
+      "id": 14
+    },
+    {
+      "status": "LOSE",
+      "date": "2022-06-30",
+      "symbol": "NVDA",
+      "entry": 110,
+      "exit": 109,
+      "size": 1,
+      "side": "LONG",
+      "id": 15
     }
   ]
 }
