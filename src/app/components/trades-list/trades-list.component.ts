@@ -17,15 +17,13 @@ export class TradesListComponent implements OnInit {
     this.tradeService.getTrades().subscribe((trades) => this.trades = trades);
   }
 
-  getTrades() {}
-
   onDelete(trade: Trade) {
     const isDelete = confirm("Are you sure?");
     if (isDelete) this.tradeService.deleteTrade(trade).subscribe(() => this.trades = this.trades.filter((t) => t.id !== trade.id));
   }
 
   onAdd(trade: Trade) {
-    this.tradeService.addTrade(trade).subscribe((trade) => this.trades.push(trade));
+    this.tradeService.addTrade(trade).subscribe(() => this.trades.push(trade))
   }
 
 }

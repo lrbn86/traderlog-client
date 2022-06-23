@@ -26,6 +26,7 @@ export class AddTradeComponent implements OnInit {
   onSubmit(f: NgForm): void {
     const newTradeItem = f.value;
     this.tradeService.addTrade(newTradeItem).subscribe();
+    alert('Trade added!');
     this.location.back();
   }
 

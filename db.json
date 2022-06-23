@@ -1,26 +1,6 @@
 {
   "trades": [
     {
-      "id": 1,
-      "status": "LOSE",
-      "date": "11/02/2022",
-      "symbol": "QQQ",
-      "entry": "100",
-      "exit": "90",
-      "size": "100",
-      "side": "LONG"
-    },
-    {
-      "id": 2,
-      "status": "LOSE",
-      "date": "11/02/2022",
-      "symbol": "SPY",
-      "entry": "100",
-      "exit": "90",
-      "size": "100",
-      "side": "LONG"
-    },
-    {
       "id": 3,
       "status": "LOSE",
       "date": "11/02/2022",
@@ -149,6 +129,126 @@
       "size": 1,
       "side": "LONG",
       "id": 15
+    },
+    {
+      "status": "WIN",
+      "date": "2022-06-14",
+      "symbol": "AMZN",
+      "entry": 114,
+      "exit": 120,
+      "size": 1,
+      "side": "LONG",
+      "id": 16
+    },
+    {
+      "status": "WIN",
+      "date": "2022-06-01",
+      "symbol": "AMD",
+      "entry": 10004,
+      "exit": 999999999,
+      "size": 1,
+      "side": "LONG",
+      "id": 17
+    },
+    {
+      "status": "LOSE",
+      "date": "2022-06-30",
+      "symbol": "TTT",
+      "entry": 11,
+      "exit": 1,
+      "size": 1,
+      "side": "LONG",
+      "id": 18
+    },
+    {
+      "status": "WIN",
+      "date": "2022-06-13",
+      "symbol": "AA",
+      "entry": 1,
+      "exit": 2,
+      "size": 1,
+      "side": "LONG",
+      "id": 19
+    },
+    {
+      "status": "WIN",
+      "date": "2022-06-24",
+      "symbol": "HH",
+      "entry": 1,
+      "exit": 2,
+      "size": 1,
+      "side": "LONG",
+      "id": 20
+    },
+    {
+      "status": "WIN",
+      "date": "2022-06-23",
+      "symbol": "ABC",
+      "entry": 1,
+      "exit": 5,
+      "size": 1,
+      "side": "LONG",
+      "id": 21
+    },
+    {
+      "status": "WIN",
+      "date": "2022-06-14",
+      "symbol": "ILOVE",
+      "entry": 1,
+      "exit": 2,
+      "size": 1,
+      "side": "LONG",
+      "id": 22
+    },
+    {
+      "status": "WIN",
+      "date": "2022-06-15",
+      "symbol": "IBUYPOWER",
+      "entry": 10,
+      "exit": 11,
+      "size": 1,
+      "side": "LONG",
+      "id": 23
+    },
+    {
+      "status": "WIN",
+      "date": "2022-06-28",
+      "symbol": "!!!!!",
+      "entry": 12,
+      "exit": 11,
+      "size": 222,
+      "side": "LONG",
+      "id": 24
+    },
+    {
+      "status": "WIN",
+      "date": "2022-06-15",
+      "symbol": "RTX",
+      "entry": 1,
+      "exit": 2,
+      "size": 1,
+      "side": "LONG",
+      "id": 25
+    },
+    {
+      "status": "WIN",
+      "date": "2022-06-07",
+      "symbol": "RRR",
+      "entry": 1,
+      "exit": 2,
+      "size": 1,
+      "side": "LONG",
+      "id": 26
+    },
+    {
+      "status": "WIN",
+      "date": "2022-06-24",
+      "symbol": "OKAY",
+      "entry": 10,
+      "exit": 20,
+      "size": 1,
+      "side": "LONG",
+      "id": 27
     }
   ]
 }
